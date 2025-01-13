@@ -1,0 +1,43 @@
+.container {
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    background: white;
+    
+    @media (max-width: 768px) {
+      padding: 2rem 1rem;
+    }
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 4rem;
+    position: relative;
+    
+    .underline {
+      display: block;
+      width: 60px;
+      height: 4px;
+      background-color: #3498db;
+      margin: 1rem auto 0;
+    }
+    
+    @media (max-width: 768px) {
+      font-size: 2rem;
+      margin-bottom: 3rem;
+    }
+  }
+  
+  .noBlog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p{
+        padding: 12px;
+        background-color: #3498db;
+        color: white;
+        border-radius: 8px;
+    }
+  }

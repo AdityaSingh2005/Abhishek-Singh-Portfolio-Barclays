@@ -1,0 +1,171 @@
+.mainContainer {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background-color: #f9fafb;
+    display: flex;
+    flex-direction: column;
+ }
+ 
+ .wavyBackground {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+ }
+ 
+ .contentWrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+ }
+ 
+ .content {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 2rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+ 
+ .titleContainer {
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+ 
+    .topAccent {
+       position: absolute;
+       top: -2rem;
+       left: 10%;
+       transform: translateX(-50%);
+       color: black;
+ 
+       font-size: clamp(1.5rem, 2vw, 2.5rem);
+       white-space: nowrap;
+    }
+ 
+    .mainTitle {
+       display: flex;
+       flex-direction: column;
+       align-items: flex-start;
+ 
+       span {
+          font-family: 'Poppins', sans-serif;
+          font-size: clamp(4rem, 10vw, 9.5rem);
+          font-weight: 400;
+          line-height: 0.9;
+          letter-spacing: -0.02em;
+          color: #000000;
+          display: block;
+       }
+    }
+ 
+    .yearAccent {
+       position: absolute;
+       bottom: -2rem;
+       right: 0;
+       color: black;
+ 
+       font-size: clamp(1.5rem, 2vw, 2.5rem);
+       white-space: nowrap;
+    }
+ }
+ 
+ .tagline {
+    color: #000000;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    margin: 6rem 0 0;
+    text-align: center;
+    width: 100%;
+ }
+ 
+ .announceStrip {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(90deg, #FF7527 0%, #FC4D4D 50%, #FF7527 100%);
+    padding: 1rem 0;
+    z-index: 20;
+ 
+    p {
+       color: white;
+       font-family: 'Poppins', sans-serif;
+       font-size: clamp(2.0rem, 1.5vw, 1.5rem);
+       font-weight: 300;
+       text-align: center;
+       margin: 0;
+       letter-spacing: 0.05em;
+    }
+ }
+ 
+ // Responsive adjustments
+ @media (max-width: 768px) {
+    .content {
+       padding: 0 1rem;
+    }
+ 
+    .titleContainer {
+       .topAccent {
+          font-size: 2rem;
+          top: -2rem;
+       }
+ 
+       .mainTitle span{
+          font-size: 6rem;
+       }
+ 
+       .yearAccent {
+          font-size: 2rem;
+          bottom: -2rem;
+       }
+    }
+ 
+    .tagline {
+       margin-top: 4rem;
+    }
+ 
+    .announceStrip{
+       p{
+          font-size: 2rem;
+       }
+    }
+ }
+ 
+ @media (max-width: 468px) {
+ 
+    .announceStrip {
+       p {
+          font-size: 1.5rem;
+       }
+    }
+ }
+ 
+ // Animation
+ @keyframes fadeIn {
+    from {
+       opacity: 0;
+       transform: translateY(20px);
+    }
+ 
+    to {
+       opacity: 1;
+       transform: translateY(0);
+    }
+ }
+ 
+ .content {
+    animation: fadeIn 0.8s ease-out forwards;
+ }
+ 
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
