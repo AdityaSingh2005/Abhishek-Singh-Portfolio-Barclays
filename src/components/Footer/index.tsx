@@ -130,8 +130,8 @@ const Footer: React.FC = () => {
                   </div>
                   <div className={styles.contactText}>
                     <h4>Email:</h4>
-                    <a href="mailto:s.abhishek82@outlook.com">
-                      s.abhishek82@outlook.com
+                    <a href="mailto:s.abhishek82@gmail.com">
+                      s.abhishek82@gmail.com
                     </a>
                   </div>
                 </div>

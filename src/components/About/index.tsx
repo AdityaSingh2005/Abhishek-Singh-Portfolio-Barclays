@@ -51,7 +51,7 @@ export default function About() {
               <div className={styles.infoItem}>
                 <Mail className={styles.icon} />
                 <span className={styles.label}>Email:</span>
-                <span className={styles.value}>s.abhishek82@outlook.com</span>
+                <span className={styles.value}>s.abhishek82@gmail.com</span>
               </div>
             </div>
 

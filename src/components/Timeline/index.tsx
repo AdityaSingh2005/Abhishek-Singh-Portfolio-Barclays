@@ -14,14 +14,22 @@ const Timeline = () => {
     const experiences: Experience[] = [
         {
             id: 1,
-            role: "VP, Global Head Of Windows",
+            role: "Global Head of Container Platform & App Hosting",
             company: "Barclays",
             logo: "/barclays.webp",
-            period: "April 2022 - Present",
-            description: "Responsible for leadership of the Microsoft Windows Server Product for Barclays bank globally. This includes delivery of Engineering Roadmap, Operational efficiency for the centralized services, commercial and financial consideration of the Windows Server product stack, risk and governance agenda, business continuity management of products and service offering, vendor engagement and management."
+            period: "October 2024 - Present",
+            description: ""
         },
         {
             id: 2,
+            role: "VP, Global Head Of Windows",
+            company: "Barclays",
+            logo: "/barclays.webp",
+            period: "April 2022 - October 2024",
+            description: "Responsible for leadership of the Microsoft Windows Server Product for Barclays bank globally. This includes delivery of Engineering Roadmap, Operational efficiency for the centralized services, commercial and financial consideration of the Windows Server product stack, risk and governance agenda, business continuity management of products and service offering, vendor engagement and management."
+        },
+        {
+            id: 3,
             role: "VP, Product Lifecycle Manager",
             company: "Barclays",
             logo: "/barclays.webp",
@@ -33,7 +41,7 @@ const Timeline = () => {
             ]
         },
         {
-            id: 3,
+            id: 4,
             role: "Senior Application Development Specialist",
             company: "IQVIA",
             logo: "/iqvia.png",
@@ -41,7 +49,7 @@ const Timeline = () => {
             description: "Actively involved in the formation of software development group of approx. 50 FTE in IQVIA in Noida in a very short time. It includes the formation of Org hierarchy from scratch which includes Architects, Developers, Automation experts, DevOps.",
         },
         {
-            id: 4,
+            id: 5,
             role: "Operations Manager",
             company: "Barclays",
             logo: "/barclays.webp",
@@ -53,7 +61,7 @@ const Timeline = () => {
             ]
         },
         {
-            id: 5,
+            id: 6,
             role: "Technical Lead",
             company: "Congnizant",
             logo: "/cognizant.png",
@@ -61,7 +69,7 @@ const Timeline = () => {
             description: "Supported entire Windows infrastructure for the customer in onshore-offshore model and resolved incident tickets, implement changes & attend major incident triage calls."
         },
         {
-            id: 6,
+            id: 7,
             role: "Project Engineer",
             company: "Wipro",
             logo: "/wipro.svg",
