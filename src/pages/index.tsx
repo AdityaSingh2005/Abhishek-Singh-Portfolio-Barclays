@@ -9,7 +9,7 @@ import Certifications from '@/components/Certifications';
 import Testimonials from '@/components/Testimonials';
 import AnimatedSection from '@/components/AnimatedSection';
 import Footer from '@/components/Footer';
-import BlogList from '@/components/BlogList';
+import Bookshelf from '@/components/bookshelf';
 
 
 
@@ -52,13 +52,19 @@ export default function Home() {
           </AnimatedSection>
         </div>
 
-        <div id="testimonials">
+        <div id="bookshelf">
           <AnimatedSection delay={500}>
+            <Bookshelf />
+          </AnimatedSection>
+        </div>
+
+        <div id="testimonials">
+          <AnimatedSection delay={600}>
             <Testimonials />
           </AnimatedSection>
         </div>
         <div id="contact">
-          <AnimatedSection delay={600}>
+          <AnimatedSection delay={700}>
             <Footer/>
           </AnimatedSection>
         </div>
